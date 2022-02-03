@@ -1,0 +1,15 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/circular-std-bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/circular-std-medium.ttf);
+  font-weight: normal;
+}
+
+body {
+  font-family: myFirstFont;
+}
