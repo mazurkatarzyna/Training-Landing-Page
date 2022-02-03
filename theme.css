@@ -12,4 +12,6 @@
 
 body {
   font-family: myFirstFont;
+  --primary-color: #00b6f0;
+  --first-text-color: #20262a;
 }
