@@ -164,7 +164,7 @@ main {
 }
 .more-info {
   text-align: center;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 .just-type {
   color: var(--secondary-yellow-color);
@@ -173,6 +173,9 @@ main {
 .heading {
   font-size: 42px;
   color: var(--first-text-color);
+}
+.more-info-buttons {
+  padding: 10px 0;
 }
 .more-info-buttons a {
   text-decoration: none;
@@ -215,7 +218,8 @@ main {
   color: var(--first-text-color);
   font-size: 36px;
 }
-.picture-description {
+.picture-description,
+.picture-description-2 {
   font-size: 18px;
   width: 350px;
   height: 96px;
@@ -227,9 +231,66 @@ main {
   color: var(--primary-color);
   font-size: 18px;
 }
-.laptop {
+.laptop,
+.code-image {
   width: 50%;
   height: 100%;
   border-radius: 5px;
   box-shadow: 0px 3px 5px #979797;
+}
+.yellow-vector {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  transform: translateX(-20%);
+  height: 95%;
+}
+.picture-description-2 {
+  width: 240px;
+}
+.more-info-description {
+  color: var(--second-text-color);
+  font-size: 17px;
+}
+.statistics-part {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statistics-bar-grey {
+  width: 50%;
+  height: 15px;
+  background-color: #f3f5f8;
+  border-radius: 10px;
+  margin-top: 40px;
+  position: relative;
+}
+.statistics-bar-blue {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.number {
+  color: #505d70;
+  font-size: 12px;
+  margin: 0 0 30px 0;
+  padding: 10px 0;
+}
+.facebook {
+  font-size: 12px;
+  color: #505d6f;
+  margin: 0 0 30px 0;
+  padding: 10px 0;
 }
