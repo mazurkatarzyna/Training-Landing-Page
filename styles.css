@@ -29,14 +29,18 @@ main {
   padding: 0;
   color: var(--first-text-color);
 }
-.nav-menu li {
+.nav-menu li,
+.side-drawer li {
   transition: all 0.3s ease-out;
   border-radius: 50px;
+  padding: 10px;
 }
-.nav-menu li:hover {
+.nav-menu li:hover,
+.side-drawer li:hover {
   background-color: var(--first-text-color);
   color: white;
   padding: 10px;
+  text-align: center;
 }
 .nav-button {
   margin: 33px 40px 33px 0px;
@@ -50,6 +54,25 @@ main {
 .nav-button:focus {
   background-color: var(--primary-color);
   color: white;
+}
+.hamburger-menu {
+  display: none;
+}
+#side-drawer {
+  display: none;
+}
+#side-drawer:target {
+  display: none;
+}
+.side-drawer {
+  list-style: none;
+  margin: 0;
+  color: var(--first-text-color);
+}
+.cross {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .background-page {
   height: 900px;
@@ -90,6 +113,7 @@ main {
   width: 510px;
   height: 170px;
   margin: 54px 0 0 0;
+  padding: 0 30px;
 }
 .main-description {
   font-size: 18px;
@@ -431,4 +455,35 @@ main {
   display: flex;
   justify-content: space-evenly;
   width: 20%;
+}
+@media (max-width: 480px) {
+  .navbar {
+    margin: 30px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .logo {
+    padding: 0;
+    width: 40%;
+  }
+  .nav-button {
+    margin: 0 10px 0 0;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  #side-drawer {
+    display: none;
+  }
+  #side-drawer:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--light-background-color);
+    width: 100%;
+    height: 100%;
+  }
 }
