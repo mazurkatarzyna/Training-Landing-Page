@@ -10,17 +10,13 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 50px;
-  height: 120px;
+  margin: 30px 30px;
   font-size: 18px;
 }
 .logo {
-  padding: 20px 0 10px 60px;
+  padding: 20px 0 10px 30px;
 }
 
-.nav-menu-container {
-  width: 35%;
-}
 .nav-menu {
   display: flex;
   flex-direction: row;
@@ -28,6 +24,7 @@ main {
   justify-content: space-between;
   padding: 0;
   color: var(--first-text-color);
+  min-width: 35%;
 }
 .nav-menu li,
 .side-drawer li {
@@ -110,18 +107,17 @@ main {
   font-size: 68px;
   text-align: center;
   color: var(--secondary-color);
-  width: 510px;
-  height: 170px;
+  max-width: 510px;
   margin: 54px 0 0 0;
   padding: 0 30px;
 }
 .main-description {
   font-size: 18px;
-  width: 350px;
-  height: 96px;
+  max-width: 350px;
   margin: auto;
   text-align: center;
   color: var(--second-text-color);
+  padding: 15px 0;
 }
 .main-buttons {
   width: 410px;
@@ -217,7 +213,7 @@ main {
 }
 
 .description-part {
-  padding: 60px 0;
+  padding: 60px 20px;
   display: flex;
   align-items: center;
   position: relative;
@@ -236,8 +232,13 @@ main {
   justify-content: space-evenly;
   width: 100%;
   align-items: center;
+  gap: 15px;
 }
-
+.description {
+  width: 50%;
+  margin: 0 50px;
+  text-align: left;
+}
 .smaller-heading {
   color: var(--first-text-color);
   font-size: 36px;
@@ -247,8 +248,7 @@ main {
   font-size: 18px;
   width: 350px;
   height: 96px;
-  margin: auto;
-  text-align: left;
+
   color: var(--second-text-color);
 }
 .dive-into-button {
@@ -257,10 +257,10 @@ main {
 }
 .laptop,
 .code-image {
-  width: 50%;
   height: 100%;
   border-radius: 5px;
   box-shadow: 0px 3px 5px #979797;
+  width: 50%;
 }
 .yellow-vector {
   position: absolute;
@@ -383,7 +383,8 @@ main {
   justify-content: center;
   background-color: var(--dark-background-color);
   color: var(--light-background-color);
-  padding: 100px 200px 100px 200px;
+  padding: 100px;
+  gap: 15px;
 }
 .white-heading {
   font-size: 54px;
@@ -409,7 +410,7 @@ main {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 20px o;
+  padding: 20px 0;
 }
 .cash {
   font-size: 68px;
@@ -429,9 +430,10 @@ main {
     rgba(165, 243, 249, 1) 6%,
     rgba(255, 255, 255, 1) 74%
   );
-  padding: 50px 150px;
+  padding: 50px 20px;
   display: flex;
   justify-content: space-around;
+  gap: 10px;
 }
 .heading-closing {
   max-width: 400px;
@@ -451,12 +453,15 @@ main {
   color: var(--second-text-color);
   padding-left: 60px;
 }
+.nav-menu.nav-menu-footer {
+  display: flex;
+}
 .social-media {
   display: flex;
   justify-content: space-evenly;
   width: 20%;
 }
-@media (max-width: 480px) {
+@media (max-width: 800px) {
   .navbar {
     margin: 30px;
   }
@@ -485,5 +490,96 @@ main {
     background-color: var(--light-background-color);
     width: 100%;
     height: 100%;
+  }
+  .grey-bar {
+    height: 33px;
+  }
+  .circle {
+    width: 10px;
+    height: 10px;
+  }
+  .white-rectangle {
+    height: 12px;
+  }
+  .section-description-1 {
+    flex-wrap: wrap-reverse;
+  }
+  .section-description-2 {
+    flex-wrap: wrap;
+  }
+  .description {
+    width: 100%;
+    margin: 0 15px;
+    text-align: center;
+  }
+  .picture-description,
+  .picture-description-2 {
+    margin: auto;
+  }
+  .laptop,
+  .code-image {
+    width: 100%;
+  }
+  .dark-blue-vector {
+    transform: translate(65%);
+  }
+  .section-price {
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .more-info-description-white {
+    width: 100%;
+  }
+  .options-info {
+    width: 100%;
+  }
+  .price {
+    justify-content: center;
+  }
+  .frequency {
+    width: unset;
+  }
+}
+@media (max-width: 850px) {
+  .navbar-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-menu.nav-menu-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+  }
+  .logo-text {
+    padding: 0;
+  }
+  .social-media {
+    width: unset;
+  }
+}
+@media (max-width: 480px) {
+  .main-heading {
+    margin: 0 10px;
+    font-size: 54px;
+  }
+  .heading {
+    margin: 0 15px;
+  }
+  .grey-bar {
+    height: 20px;
+  }
+  .circle {
+    width: 7px;
+    height: 7px;
+  }
+  .white-rectangle {
+    height: 8px;
+  }
+  .blue-vector {
+    transform: translateX(50%);
+  }
+  .yellow-vector {
+    transform: translateX(-50%);
   }
 }
